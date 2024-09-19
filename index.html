@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Locator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Find Restaurants Within 50 Miles</h1>
+    
+    <!-- Button to get user's location -->
+    <button onclick="getlocation()">Get My Location</button>
+    
+    <!-- Div to show user's coordinates -->
+    <p id="demo">Click the button to detect your location.</p>
+    
+    <!-- Div to display the Google Map -->
+    <div id="map"></div>
+    
+    <!-- Div to display the list of restaurants (to be implemented later) -->
+    <div id="restaurant-list"></div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+    <!-- Google Maps API with callback to initMap -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBx2QDBhxOIcTJE2HR5o0_EqjrbvcmIoiw&callback=initMap" async defer></script>
+</body>
+</html>
+
+
+
